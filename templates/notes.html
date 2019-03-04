@@ -6,13 +6,13 @@
             output = "<a href=\"" + href + "\">" + text + "</a>"
             return output
         }
-        
+
         function format_icon(href,icon) {
             icon = "<img src=\"" + icon + "\" alt=\"ABC\" width=\"42\" height=\"42\" border=\"0\">";
             output = "<a href=\"" + href + "\">" + icon + "</a>"
             return output
         }
-        
+
         function format_notes(data) {
             function format_note(n) {
                 id_cell = "<td>" + n.id + "</td>"
@@ -28,7 +28,7 @@
             }
             return output + "</table>";
         }
-        
+
         $(document).ready(function() {
             $("#filter_button").click(function() {
                 filter = $("#filter").val()
@@ -43,12 +43,12 @@
     </script>
 </head>
 <body>
-    
+
 {% if message != None and message != "" %}
     {{message}}
     <hr/>
 {% endif %}
-
+Christopher Herzog's
 Notes
     <hr>
     <input type="text" id="filter" name="filter" value=""/>
