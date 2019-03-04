@@ -8,6 +8,7 @@ import notes_api
 
 app = Flask(__name__)
 
+
 _message=""
 
 @app.route('/')

@@ -1,8 +1,9 @@
-from tinydb import TinyDB, Query
 import os
 import json
 import re
+from tinydb import TinyDB, Query
 
+#initialize database
 db = TinyDB("notes_tinydb.json")
 
 
